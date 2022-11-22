@@ -12,7 +12,7 @@ pipeline {
         stage('Archive Cowsay') {
             steps {
                 sh '''
-                ssh -i "./.ssh/jenk-key" jenkins@34.130.245.1 << EOF
+                ssh -i "~/.ssh/jenk-key" jenkins@34.130.245.1 << EOF
                 touch jenkins-machine-was-err
                 EOF
                 '''
