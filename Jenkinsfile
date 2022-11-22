@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                 ssh -i "./.ssh/jenk-key" jenkins@34.130.245.1 << EOF
-                touch jenkins-machine-was-errr
+                touch jenkins-machine-was-err
                 EOF
                 '''
             }
