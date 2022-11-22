@@ -12,7 +12,9 @@ pipeline {
         stage('Archive Cowsay') {
             steps {
                 sh '''
-                /usr/games/cowsay "Good Job Class" > wew.txt
+                ssh -i "./.ssh/jenk-key" jenkins@34.130.245.1 << EOF
+                touch jenkins-machine-was-errr
+                EOF
                 '''
             }
         }
